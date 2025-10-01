@@ -4,7 +4,7 @@ import Header from "./component/Header";
 import Aboutme from "./component/Aboutme";
 import Skills from "./component/Skills";
 import Myworks from "./component/Myworks";
-import Community from "./component/Community";
+import Community from "./component/Testimonial";
 import Footer from "./component/Footer";
 
 function App() {
