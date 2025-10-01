@@ -6,7 +6,6 @@ import Skills from "./component/Skills";
 import Myworks from "./component/Myworks";
 import Community from "./component/Community";
 import Footer from "./component/Footer";
-import Aside from "./component/Aside";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
         <Skills />
         <Myworks />
         <Community />
-        <Aside />
       </main>
       {/* --푸터-- */}
       <Footer />
