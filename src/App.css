@@ -96,3 +96,43 @@ header a{
     border: 1px solid var(--color-accent);
     border-radius: 8px;
 }
+
+/* Home */
+#home{
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 5rem 1rem;
+    padding-top: 7rem;
+    text-align: center;
+}
+
+.home-avatar{
+    width: 250px; height: 250px;
+    object-fit: cover;
+    border: 3px solid var(--color-accent);
+    border-radius: 100%;
+}
+
+.home-title{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.home-title--strong{
+    color: var(--color-accent);
+}
+.home-description{
+    font-size: 1.3rem;
+}
+.home-git, .home-vel{    
+    display: inline-block;
+    background-color: var(--color-accent);
+    color: var(--color-black);    
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;    
+}
+.home-git:hover, .home-vel:hover{
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);
+}
