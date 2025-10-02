@@ -8,29 +8,29 @@ const Aboutme = () => {
       <ul>
         자신있는 기술
         <li>
-          <img src="" alt="" />
+          <img src="" alt="ok" />
           <p></p>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src="" alt="pk" />
           <p></p>
         </li>
-        <li>
-          <img src="" alt="" />
+        <li>font-family: 'Open Sans', sans-serif;
+          <img src="" alt="pk" />
           <p></p>
         </li>
       </ul>
       <ul>
         학교? 스터디? 부캠?
         <li>
-          <img src="" alt="" />
+          <img src="" alt="ok" />
           <div>
             <p></p>
             <p></p>
           </div>
         </li>
         <li>
-          <img src="" alt="" />
+          <img src="" alt="ok" />
           <div>
             <p></p>
             <p></p>

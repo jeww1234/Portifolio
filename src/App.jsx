@@ -19,6 +19,11 @@ function App() {
         <Skills />
         <Myworks />
         <Community />
+        <aside>
+          <a href="#" title="back to top">
+            <i className="fa-solid fa-arrow-up"></i>
+          </a>
+        </aside>
       </main>
       {/* --푸터-- */}
       <Footer />
