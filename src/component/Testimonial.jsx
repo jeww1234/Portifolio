@@ -2,59 +2,59 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section className="section">
+    <section id="testimonial" className="section max-container">
       <div>
         <h2 className='title'>Testimonial</h2>
         <p className="description">See what they sat about me</p>
         <section>
           Java Script
-          <ul>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
+          <ul className="testimonials">
+            <li className="testimonial">
+              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate atque possimus adipisci quia maiores deserunt
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p>Kim</p>
+                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
               </div>
             </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
+            <li className="testimonial">
+              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate atque possimus adipisci quia maiores deserunt
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p>Kim</p>
+                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
               </div>
             </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
+            <li className="testimonial">
+              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate atque possimus adipisci quia maiores deserunt
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p>Kim</p>
+                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
               </div>
             </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
+            <li className="testimonial">
+              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptate atque possimus adipisci quia maiores deserunt
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p>Kim</p>
+                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
               </div>
             </li>
           </ul>
