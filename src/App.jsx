@@ -13,7 +13,7 @@ function App() {
       {/* --헤더-- */}
       <Header />
       {/* --메인-- */}
-      <main style={{ backgroundColor: "skyblue" }}>
+      <main className="main">
         <Title />
         <Aboutme />
         <Skills />
