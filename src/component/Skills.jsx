@@ -2,10 +2,10 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <section>
-      <h2>My Skills</h2>
+    <section className="section">
+      <h2 className='title'>My Skills</h2>
       <p>Skills & Attributes</p>
-      <p>
+      <p className="description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae
         natus possimus saepe, aliquid reiciendis atque dolores temporibus
         quaerat enim labore, non illum sit placeat quasi aspernatur, facilis

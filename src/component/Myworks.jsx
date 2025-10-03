@@ -2,9 +2,9 @@ import React from 'react'
 
 const Myworks = () => {
   return (
-    <section>
-      <h2>My work</h2>
-      <p>Projects</p>
+    <section className="section">
+      <h2 className='title'>My work</h2>
+      <p className="description">Projects</p>
       <ul>
         <li><button>All <span>8</span></button></li>
         <li><button>Team <span>4</span></button></li>

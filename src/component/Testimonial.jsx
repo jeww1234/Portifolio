@@ -2,10 +2,10 @@ import React from "react";
 
 const Testimonial = () => {
   return (
-    <section>
+    <section className="section">
       <div>
-        <h2>Testimonial</h2>
-        <p>See what they sat about me</p>
+        <h2 className='title'>Testimonial</h2>
+        <p className="description">See what they sat about me</p>
         <section>
           Java Script
           <ul>

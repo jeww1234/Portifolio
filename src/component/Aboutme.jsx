@@ -2,9 +2,9 @@ import React from "react";
 
 const Aboutme = () => {
   return (
-    <section>
-      <h2></h2>
-      <p>자기소개 어필</p>
+    <section className="section">
+      <h2 className="title">About me</h2>
+      <p className="description">자기소개 어필</p>
       <ul>
         자신있는 기술
         <li>
