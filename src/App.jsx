@@ -13,7 +13,7 @@ function App() {
       {/* --헤더-- */}
       <Header />
       {/* --메인-- */}
-      <main className="main">
+      <main>
         <Title />
         <Aboutme />
         <Skills />

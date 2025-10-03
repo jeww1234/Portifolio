@@ -72,14 +72,8 @@ button:focus {
 }
 
 .max-container {
-  max-width: var(--size-max-width);
-}
-
-/* Main */
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: var(--size-max-width);  
+  margin: 0 auto;
 }
 
 /* header */
@@ -220,4 +214,41 @@ header a {
 .job-period {
   color: var(--color-primary);
   font-size: 0.8rem;
+}
+
+/* Skills */
+
+#skills{
+    background-color: var(--color-primary-variant);
+    color: var(--color-text);        
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 6fr 4fr;    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;    
+}
+
+.skills-title{
+    color: var(--color-accent);
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.skills-coding{
+    grid-row: span 2;
+    padding: 1rem;
+    background-color: var(--color-primary);
+}
+
+.skills-tools{
+    padding: 1rem;
+}
+
+.skills-etc{
+    padding: 1rem;
+    background-color: var(--color-primary);
+    filter: brightness(150%);
 }
