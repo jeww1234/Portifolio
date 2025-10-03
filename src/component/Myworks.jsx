@@ -23,61 +23,77 @@ const Myworks = () => {
             </button>
           </li>
         </ul>
-        <ul>
-          <li>
+        <ul className="projects">
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
-          <li>
+          <li className="project">
             <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" />
-              <h3>Project #1</h3>
-              <p>Clone coding with HTML, CSS</p>
+              <img src="./images/favicon.png" alt="" className="project-img" />
+              <div className="project-metadata">
+                <h3 className="project-title">Project #1</h3>
+                <p>Clone coding with HTML, CSS</p>
+              </div>
             </a>
           </li>
         </ul>
