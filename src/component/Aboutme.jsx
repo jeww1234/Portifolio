@@ -23,7 +23,6 @@ const Aboutme = () => {
         </li>
       </ul>
       <ul className="jobs">
-        학교? 스터디? 부캠?
         <li className="job">
           <img src="" alt="ok" />
           <div>

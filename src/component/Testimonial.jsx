@@ -4,13 +4,17 @@ const Testimonial = () => {
   return (
     <section id="testimonial" className="section max-container">
       <div>
-        <h2 className='title'>Testimonial</h2>
+        <h2 className="title">Testimonial</h2>
         <p className="description">See what they sat about me</p>
         <section>
           Java Script
           <ul className="testimonials">
             <li className="testimonial">
-              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <img
+                className="testimonial-img"
+                src="./images/favicon.png"
+                alt=""
+              />
               <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -18,11 +22,20 @@ const Testimonial = () => {
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
+                <p>
+                  <a href="#" className="testimonial-bubble-name">
+                    Kim
+                  </a>
+                  /Google
+                </p>
               </div>
             </li>
             <li className="testimonial">
-              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <img
+                className="testimonial-img"
+                src="./images/favicon.png"
+                alt=""
+              />
               <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -30,11 +43,20 @@ const Testimonial = () => {
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
+                <p>
+                  <a href="#" className="testimonial-bubble-name">
+                    Kim
+                  </a>
+                  /Google
+                </p>
               </div>
             </li>
             <li className="testimonial">
-              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <img
+                className="testimonial-img"
+                src="./images/favicon.png"
+                alt=""
+              />
               <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -42,11 +64,20 @@ const Testimonial = () => {
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
+                <p>
+                  <a href="#" className="testimonial-bubble-name">
+                    Kim
+                  </a>
+                  /Google
+                </p>
               </div>
             </li>
             <li className="testimonial">
-              <img className="testimonial-img" src="./images/favicon.png" alt="" />
+              <img
+                className="testimonial-img"
+                src="./images/favicon.png"
+                alt=""
+              />
               <div className="testimonial-bubble">
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -54,60 +85,12 @@ const Testimonial = () => {
                   placeat, eius ullam officia corrupti quibusdam natus incidunt
                   amet laborum nulla provident quidem perferendis fuga.
                 </p>
-                <p><a href="#" className="testimonial-bubble-name">Kim</a>/Google</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section>
-          React
-          <ul>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate atque possimus adipisci quia maiores deserunt
-                  placeat, eius ullam officia corrupti quibusdam natus incidunt
-                  amet laborum nulla provident quidem perferendis fuga.
+                  <a href="#" className="testimonial-bubble-name">
+                    Kim
+                  </a>
+                  /Google
                 </p>
-                <p>Kim</p>
-              </div>
-            </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate atque possimus adipisci quia maiores deserunt
-                  placeat, eius ullam officia corrupti quibusdam natus incidunt
-                  amet laborum nulla provident quidem perferendis fuga.
-                </p>
-                <p>Kim</p>
-              </div>
-            </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate atque possimus adipisci quia maiores deserunt
-                  placeat, eius ullam officia corrupti quibusdam natus incidunt
-                  amet laborum nulla provident quidem perferendis fuga.
-                </p>
-                <p>Kim</p>
-              </div>
-            </li>
-            <li>
-              <img src="./images/favicon.png" alt="" />
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptate atque possimus adipisci quia maiores deserunt
-                  placeat, eius ullam officia corrupti quibusdam natus incidunt
-                  amet laborum nulla provident quidem perferendis fuga.
-                </p>
-                <p>Kim</p>
               </div>
             </li>
           </ul>

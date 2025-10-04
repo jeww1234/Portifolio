@@ -10,7 +10,7 @@ const Header = () => {
         </h1>
       </div>
 
-      <nav>
+      <nav className="header-nav">
         <ul className="header-menu">
           <li>
             <a href="" className="header-menu-item active">
