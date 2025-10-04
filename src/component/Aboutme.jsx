@@ -12,7 +12,7 @@ const Aboutme = () => {
           <p>여기에 무엇을 적을까요? 여기에 무엇을 적을까요? 여기에 무엇을 적을까요?</p>
         </li>
         <li className="major">
-          <i class="fa-solid fa-mobile-screen major-icon"></i>
+          <i className="fa-solid fa-mobile-screen major-icon"></i>
           <p className="major-title">Moblie</p>
           <p>여기에 무엇을 적을까요? 여기에 무엇을 적을까요? 여기에 무엇을 적을까요?</p>
         </li>
