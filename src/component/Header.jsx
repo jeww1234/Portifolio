@@ -1,27 +1,22 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Header = () => {
+const Header = ({ sectionRefs }) => {
+  const scrollTo = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+    setIsNavVisible(false);
+  };
+
   const headerRef = useRef(null);
-  const [isDark, setIsDark] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
+  const [isNavVisible, setIsNavVisible] = useState(false);
 
-  useEffect(() => {
-    if (headerRef.current) {
-      const height = headerRef.current.getBoundingClientRect().height;      
-      setHeaderHeight(height);
-    }
-
-    const handleScrool = () => {
-      const scrolly = window.scrollY;
-      setIsDark(scrolly > headerHeight);
-    };
-
-    window.addEventListener("scroll", handleScrool);
-    return () => window.removeEventListener("scroll", handleScrool);
-  }, [headerHeight]);
+  //toggle 클릭하면 header-nav를 보여준다
+  const handleToggleClick = () => {
+    setIsNavVisible((prev) => !prev);
+  };
 
   return (
-    <header className={`header ${isDark ? "dark" : ""}`} ref={headerRef}>
+    <header className="header" ref={headerRef}>
       <div className="header-logo">
         <img src="./images/favicon.png" alt="" className="header-logo-img" />
         <h1 className="header-logo-title">
@@ -29,27 +24,47 @@ const Header = () => {
         </h1>
       </div>
 
-      <nav className="header-nav">
+      <button
+        className="header-toggle"
+        aria-label="navigation menu toggle"
+        onClick={() => handleToggleClick()}
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <nav className={`header-nav ${isNavVisible ? "visible" : "hidden"}`}>
         <ul className="header-menu">
           <li>
-            <a href="" className="header-menu-item active">
+            <button
+              className="header-menu-item"
+              onClick={() => scrollTo(sectionRefs.aboutRef)}
+            >
               About me
-            </a>
+            </button>
           </li>
           <li>
-            <a href="" className="header-menu-item">
+            <button
+              className="header-menu-item"
+              onClick={() => scrollTo(sectionRefs.skillsRef)}
+            >
               Skills
-            </a>
+            </button>
           </li>
           <li>
-            <a href="" className="header-menu-item">
+            <button
+              className="header-menu-item"
+              onClick={() => scrollTo(sectionRefs.worksRef)}
+            >
               My works
-            </a>
+            </button>
           </li>
           <li>
-            <a href="" className="header-menu-item">
+            <button
+              className="header-menu-item"
+              onClick={() => scrollTo(sectionRefs.communityRef)}
+            >
               Community
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

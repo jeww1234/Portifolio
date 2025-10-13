@@ -21,6 +21,7 @@
 
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -78,7 +79,7 @@ button:focus {
 
 /* header */
 .header {
-  background-color: transparent;
+  background-color: var(--color-primary);
   position: fixed;
   top: 0;
   width: 100%;
@@ -107,11 +108,20 @@ header a {
   font-size: 1.8rem;
 }
 .header-menu {
+  margin: 0 5rem;
   display: flex;
   gap: 4px;
 }
+.header-menu li{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 .header-menu-item {
+  display: block;  
   padding: 8px 20px;
+  color: var(--color-text);
+  border-bottom: 1px solid transparent;
 }
 .header-menu-item:hover {
   border-bottom: 1px solid var(--color-accent);
@@ -120,9 +130,6 @@ header a {
 .header-menu-item.active {
   border: 1px solid var(--color-accent);
   border-radius: 8px;
-}
-.dark {
-  background-color: var(--color-primary);
 }
 
 /* Home */
@@ -395,8 +402,8 @@ header a {
 .fa-arrow-up {
   position: fixed;
   right: 25px;
-  bottom: 25px;  
-  background-color: var(--color-primary);  
+  bottom: 25px;
+  background-color: var(--color-primary);
   box-shadow: 3px 3px 0px 0px var(--color-accent);
   color: var(--color-text);
   border-radius: 50%;
@@ -404,10 +411,14 @@ header a {
   width: 4.5rem;
   font-size: 3rem;
   text-align: center;
-  line-height: 4.5rem;  
+  line-height: 4.5rem;
   opacity: 0;
 }
 
+/* bars */
+.header-toggle {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   .section {
@@ -420,8 +431,7 @@ header a {
     font-size: 1rem;
   }
   .header {
-    flex-direction: column;
-    align-items: start;
+    justify-content: space-between;
   }
   .header-menu {
     flex-direction: column;
@@ -430,10 +440,15 @@ header a {
     gap: 1rem;
   }
   .header-nav {
+    display: none;
     width: 100%;
+    position: absolute;
+    top: 51px;
+    left: 0;
+    background-color: var(--color-primary-variant);
   }
   #home {
-    padding-bottom: 3rem;
+    padding-bottom: 3rem;   
   }
   .home-title {
     font-size: 2.5rem;
@@ -468,4 +483,24 @@ header a {
   .testimonial:nth-child(even) .testimonial-img {
     order: 0;
   }
+  .header-toggle {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  .header-menu-item.active {
+  border: none;
+  border-radius: 8px;
+}
 }
