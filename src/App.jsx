@@ -8,6 +8,7 @@ import Community from "./component/Testimonial";
 import Footer from "./component/Footer";
 
 function App() {
+  
   return (
     <div style={{ position: "relative" }}>
       {/* --헤더-- */}
@@ -18,12 +19,7 @@ function App() {
         <Aboutme />
         <Skills />
         <Myworks />
-        <Community />
-        <aside>
-          <a href="#" title="back to top">
-            <i className="fa-solid fa-arrow-up"></i>
-          </a>
-        </aside>
+        <Community />        
       </main>
       {/* --푸터-- */}
       <Footer />
