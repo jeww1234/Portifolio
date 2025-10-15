@@ -1,101 +1,112 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Myworks = () => {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const projects = [
+    {
+      id: 1,
+      title: "Project #1",
+      description: "Clone coding with HTML, CSS",
+      image: "./images/favicon.png",
+      category: "team",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "Project #2",
+      description: "React portfolio site",
+      image: "./images/favicon.png",
+      category: "personal",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "Project #3",
+      description: "Team dashboard with Firebase3",
+      image: "./images/favicon.png",
+      category: "team",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "Project #4",
+      description: "Vanilla JS game",
+      image: "./images/favicon.png",
+      category: "personal",
+      link: "#",
+    },
+    {
+      id: 5,
+      title: "Project #5",
+      description: "Vanilla JS game1",
+      image: "./images/favicon.png",
+      category: "personal",
+      link: "#",
+    },
+    {
+      id: 6,
+      title: "Project #6",
+      description: "Vanilla JS game2",
+      image: "./images/favicon.png",
+      category: "personal",
+      link: "#",
+    },
+    {
+      id: 7,
+      title: "Project #7",
+      description: "Team dashboard with Firebase4",
+      image: "./images/favicon.png",
+      category: "team",
+      link: "#",
+    },
+    {
+      id: 8,
+      title: "Project #8",
+      description: "Vanilla JS game3",
+      image: "./images/favicon.png",
+      category: "personal",
+      link: "#",
+    },
+  ];
+
+  const filteredProjects =
+    selectedCategory === "all"
+      ? projects
+      : projects.filter((project) => project.category === selectedCategory);
+
   return (
     <section id="work" className="section">
       <div className="max-container">
         <h2 className="title">My work</h2>
         <p className="description">Projects</p>
+
         <ul className="categories">
-          <li>
-            <button className="category category-selected">
-              All <span className="category-count">8</span>
-            </button>
-          </li>
-          <li>
-            <button className="category">
-              Team <span className="category-count">4</span>
-            </button>
-          </li>
-          <li>
-            <button className="category">
-              Personal <span className="category-count">4</span>
-            </button>
-          </li>
+          {["all", "team", "personal"].map((category) => (
+            <li key={category}>
+              <button
+                className={`category ${
+                  selectedCategory === category ? "category-selected" : ""
+                }`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}{" "}
+              </button>
+            </li>
+          ))}
         </ul>
         <ul className="projects">
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
-          <li className="project">
-            <a href="#" target="_blank">
-              <img src="./images/favicon.png" alt="" className="project-img" />
-              <div className="project-metadata">
-                <h3 className="project-title">Project #1</h3>
-                <p>Clone coding with HTML, CSS</p>
-              </div>
-            </a>
-          </li>
+          {filteredProjects.map((project) => (
+            <li className="project" key={project.id}>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img src={project.image} alt="" className="project-img" />
+                <div className="project-metadata">
+                  <h3 className="project-title"><a href="#">자세히 보기</a></h3>
+                  <p><a href="#">Github 바로가기</a></p>
+                </div>
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

@@ -351,6 +351,9 @@ header a {
   opacity: 0.8;
   transform: translateY(0px);
 }
+.project-metadata a{
+  color: var(--color-text);
+}
 
 .project-title:after {
   content: "";
