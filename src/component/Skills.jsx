@@ -1,8 +1,8 @@
 import React from "react";
 
-const Skills = () => {
+const Skills = React.forwardRef((props, ref) => {
   return (
-    <section id="skills" className="section">
+    <section id="skills" className="section" ref={ref}>
       <div className="max-container">
         <h2 className="title">My Skills</h2>
         <p>Skills & Attributes</p>
@@ -47,6 +47,6 @@ const Skills = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Skills;

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const Title = () => {
+const Title = React.forwardRef((props, ref) => {
   // Arrow up 버튼을 위로 스크롤 시 투명하게 처리
   // 홈?의 절반 이상 스크롤시 불투명하게 처리
 
@@ -51,7 +51,7 @@ const Title = () => {
   }, [homeHeight]);
 
   return (
-    <section id="home">
+    <section id="home" ref={ref}>
       <div className="home-container" ref={homeRef}>
         <img
           src="./images/favicon.png"
@@ -83,6 +83,6 @@ const Title = () => {
       </aside>
     </section>
   );
-};
+});
 
 export default Title;

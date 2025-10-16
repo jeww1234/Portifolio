@@ -13,14 +13,14 @@ function App() {
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
   const worksRef = useRef(null);
-  const communityRef = useRef(null);
+  const testimonialRef = useRef(null);
 
   const sectionRefs = {
     titleRef,
     aboutRef,
     skillsRef,
     worksRef,
-    communityRef,
+    testimonialRef,
   };
 
   return (
@@ -29,21 +29,15 @@ function App() {
       <Header sectionRefs={sectionRefs} />
       {/* --메인-- */}
       <main>
-        <section ref={titleRef}>
-          <Title />
-        </section>
-        <section ref={aboutRef}>
-          <Aboutme />
-        </section>
-        <section ref={skillsRef}>
-          <Skills />
-        </section>
-        <section ref={worksRef}>
-          <Myworks />
-        </section>
-        <section ref={communityRef}>
-          <Community />
-        </section>
+        <Title ref={titleRef}/>
+
+        <Aboutme ref={aboutRef} />
+
+        <Skills ref={skillsRef} />
+
+        <Myworks ref={worksRef} />
+
+        <Community ref={testimonialRef} />
       </main>
 
       {/* --푸터-- */}

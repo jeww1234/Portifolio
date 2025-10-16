@@ -1,8 +1,8 @@
 import React from "react";
 
-const Testimonial = () => {
+const Testimonial = React.forwardRef((props, ref) => {
   return (
-    <section id="testimonial" className="section max-container">
+    <section id="testimonial" className="section max-container" ref={ref}>
       <div>
         <h2 className="title">Testimonial</h2>
         <p className="description">See what they sat about me</p>
@@ -98,6 +98,6 @@ const Testimonial = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Testimonial;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Myworks = () => {
+const Myworks = React.forwardRef((props, ref) => {
   const [selectedCategory, setSelectedCategory] = useState("all");
 
   const projects = [
@@ -76,7 +76,7 @@ const Myworks = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <section id="work" className="section">
+    <section id="work" className="section" ref={ref}>
       <div className="max-container">
         <h2 className="title">My work</h2>
         <p className="description">Projects</p>
@@ -101,8 +101,12 @@ const Myworks = () => {
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img src={project.image} alt="" className="project-img" />
                 <div className="project-metadata">
-                  <h3 className="project-title"><a href="#">자세히 보기</a></h3>
-                  <p><a href="#">Github 바로가기</a></p>
+                  <h3 className="project-title">
+                    <div href="#">자세히 보기</div>
+                  </h3>
+                  <div>
+                    <div href="#">Github 바로가기</div>
+                  </div>
                 </div>
               </a>
             </li>
@@ -111,6 +115,6 @@ const Myworks = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Myworks;
